@@ -1,7 +1,7 @@
-global using Xunit;
 using Microsoft.EntityFrameworkCore;
 using RoomBookingApp.Domain;
 using RoomBookingApp.Persistence.Repositories;
+using Xunit;
 
 namespace RoomBookingApp.Persistence.Tests;
 //hole integration testing, testing the systems we are interacting with
