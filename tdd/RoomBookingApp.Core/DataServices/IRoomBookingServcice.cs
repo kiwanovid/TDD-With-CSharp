@@ -1,6 +1,6 @@
 namespace RoomBookingApp.Core.DataServices;
 
-using RoomBookingApp.Core.Domain;
+using RoomBookingApp.Domain;
 
 public interface IRoomBookingServcice
 {
