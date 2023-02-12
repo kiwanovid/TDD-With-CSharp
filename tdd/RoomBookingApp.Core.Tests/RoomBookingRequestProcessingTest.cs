@@ -14,7 +14,7 @@ namespace RoomBookingApp.Core.Tests
     {
         private RoomBookingRequestProcessor _processor;
         private RoomBookingRequest _request;
-        private Mock<IRoomBookingServcice> _roomBookingServiceMock;
+        private Mock<IRoomBookingService> _roomBookingServiceMock;
         private List<Room> _availableRooms;
 
         public RoomBookingReuestProcessingTest()
@@ -28,7 +28,7 @@ namespace RoomBookingApp.Core.Tests
 
             _availableRooms = new List<Room>() { new Room() { Id = 1 } };
 
-            _roomBookingServiceMock = new Mock<IRoomBookingServcice>();
+            _roomBookingServiceMock = new Mock<IRoomBookingService>();
 
             _roomBookingServiceMock
                 .Setup(rbs => rbs.GetAvailableRooms(_request.Date))

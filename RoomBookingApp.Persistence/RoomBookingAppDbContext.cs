@@ -3,6 +3,11 @@ namespace RoomBookingApp.Persistence
     using Microsoft.EntityFrameworkCore;
     using RoomBookingApp.Domain;
 
+    /*
+     1- Startup Projects is UI (MVC, API, ... etc).
+
+     2- Default project in package manager console is place of (ApplicationDbContext).
+     */
     public class RoomBookingAppDbContext : DbContext
     {
         public RoomBookingAppDbContext(DbContextOptions<RoomBookingAppDbContext> options) : base(options)

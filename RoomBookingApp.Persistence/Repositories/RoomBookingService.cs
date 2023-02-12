@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using RoomBookingApp.Core.DataServices;
 using RoomBookingApp.Domain;
 
-public class RoomBookingService : IRoomBookingServcice
+public class RoomBookingService : IRoomBookingService
 {
     private readonly RoomBookingAppDbContext _context;
 

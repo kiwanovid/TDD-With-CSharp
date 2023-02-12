@@ -2,7 +2,7 @@ namespace RoomBookingApp.Core.DataServices;
 
 using RoomBookingApp.Domain;
 
-public interface IRoomBookingServcice
+public interface IRoomBookingService
 {
     void Save(RoomBooking roomBooking);
 

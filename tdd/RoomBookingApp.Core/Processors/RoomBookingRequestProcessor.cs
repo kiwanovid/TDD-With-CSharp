@@ -6,11 +6,11 @@ using RoomBookingApp.Domain.BaseModels;
 
 namespace RoomBookingApp.Core.Processors
 {
-    public class RoomBookingRequestProcessor
+    public class RoomBookingRequestProcessor : IRoomBookingRequestProcessor
     {
-        private readonly IRoomBookingServcice _roomBookingService;
+        private readonly IRoomBookingService _roomBookingService;
 
-        public RoomBookingRequestProcessor(IRoomBookingServcice roomBookingService)
+        public RoomBookingRequestProcessor(IRoomBookingService roomBookingService)
         {
             _roomBookingService = roomBookingService;
         }
